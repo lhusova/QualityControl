@@ -8,11 +8,6 @@
         "password": "not_applicable",
         "name": "not_applicable"
       },
-      "Activity": {
-        "number": "536238",
-        "start" : "1683755568367",
-        "type": "2"
-      },
       "monitoring": {
         "url": "infologger:///debug?qc"
       },
@@ -41,6 +36,13 @@
             "moduleName": "QcCommon"
           }
         ],
+        "extendedTaskParameterss": {
+          "default": {
+            "default": {
+              "MTVXclass": "CMTVX-B-NOPF"
+            }
+          }
+        },
         "plots": [
           {
             "name": "L0_3_rate",

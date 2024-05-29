@@ -123,6 +123,9 @@ void CTPTrendingTask::trendValues(const Trigger& t, repository::DatabaseInterfac
   // map<string, string> metadata; // can be empty
   bool inputMissing = false;
 
+  std::string param = mCustomParameters.at("MTVXclass","default");
+  ILOG(Info, Support) << "Custom param: " << param << ENDM;
+
   for (auto& dataSource : mConfig.dataSources) {
     auto mo = qcdb.retrieveMO(dataSource.path, dataSource.name, t.timestamp, t.activity);
     if (!mo) {
